@@ -250,6 +250,44 @@ b{
     header{
         z-index: 0;
         position: relative;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    header *{
+        height: 40px;
+        border-bottom:1px solid black;
+        width:auto;
+    }
+    nav{
+        flex-direction: column;
+        width:100%;
+    }
+    nav a{
+        width:100%;
+        height: 40px;
+    }
+    #top-section .right-container{
+        display: none;
+    }
+    #section-2{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width:100%;
+    }
+    .left-container{
+        width:100%;
+        margin-top: 1em;
+    }
+    .right-container{
+        width:100%;
+        margin-top: 2em;
+    }
+    .triple-container{
         flex-direction: column;
     }
+    .triple-container .sub-container{
+        width:100%;
+        margin-top: 2em;
+    }
+
 }
