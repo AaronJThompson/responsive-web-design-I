@@ -73,6 +73,7 @@ h1, h2, h3, h4, h5 {
 	margin: 0 auto;
 }
 header {
+    display: flex;
     max-width: 900px;
 	width: 100%;
 	margin-bottom: 0px;
@@ -80,27 +81,24 @@ header {
 	position: fixed;
 	background-color: cornflowerblue;
 	height: 50px;
-	top: 0;
+    top: 0;
+    align-items: center;
 }
 nav {
 	display: flex;
 	align-items:center;
-	justify-content: space-around;
+	justify-content: space-between;
 	margin: 0 0;
 	padding: 0 0;
-	width: 100%;
-	height: 50px;
+    height: 50px;
+    width: auto;
+    flex: 1;
 }
 nav a{
 	text-decoration: none;
 	color: white;
 	text-align: center;
 	width: 16.66%;
-}
-.logo{
-	margin-left: 5%; 
-	margin-right:0;
-	width: auto;
 }
 #top-section{
 	display:flex;
@@ -242,4 +240,16 @@ ul li{
 }
 b{
 	font-weight: bold;
+}
+ /* Tablet size */
+@media(max-width: 800px){
+
+}
+/* Phone size */
+@media(max-width: 500px){
+    header{
+        z-index: 0;
+        position: relative;
+        flex-direction: column;
+    }
 }
