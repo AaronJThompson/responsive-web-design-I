@@ -1,3 +1,244 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.container{
+	max-width: 900px;
+	width: 100%;
+	margin: 0 auto;
+}
+header {
+	width: 900px;
+	margin-bottom: 0px;
+	z-index: 1;
+	position: fixed;
+	background-color: cornflowerblue;
+	height: 50px;
+	top: 0;
+}
+nav {
+	display: flex;
+	align-items:center;
+	justify-content: space-around;
+	margin: 0 0;
+	padding: 0 0;
+	width: 100%;
+	height: 50px;
+}
+nav a{
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	width: 16.66%;
+}
+.logo{
+	margin-left: 5%; 
+	margin-right:0;
+	width: auto;
+}
+#top-section{
+	display:flex;
+	align-items:center;
+	width: 100%;
+	margin: 80px 0;
+}
+#section-2{
+	display:flex;
+	flex-wrap: wrap;
+}
+.left-container{
+	display:flex;
+	flex-direction: column;
+	align-items:center;
+	justify-content: center;
+	margin: 0 0;
+	width: 49.5%;
+	overflow: hidden;
+}
+.right-container{
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	flex-direction: column;
+	margin: 0 0;
+	width: 49.5%;
+	overflow: hidden;
+}
+#header-img{
+	width: 80%;
+	align-self:flex-end;
+	float: right;
+}
+h1 {
+	font-size: 400%;
+}
+h2{
+	align-self:flex-start;
+}
+#innovation{
+	text-align: center;
+	margin: 0 auto;
+}
+#start-button{
+	font-family: 'Titillium Web', sans-serif;
+	margin: 10px auto;
+	display: block;
+	background-color: white;
+	text-decoration: none;
+	padding: 0 30px;
+	border: 1px solid black;
+}
+
+.section-splitter{
+	margin: 0 0;
+	margin-bottom: 40px;
+	padding: 0 0;
+	width: 100%;
+	border-bottom: 2px solid grey;
+}
+
+.spacer{
+	width: 100%;
+	margin: 40px 0;
+}
+
+.middle-img{
+	width:100%;
+}
+.triple-container{
+	width: 100%;
+	padding: 0 0;
+	margin: 0 0;
+	display: flex;
+}
+.triple-container .sub-container{
+	width: 33%;
+	margin: 0 0;
+	padding: 0 0;
+	vertical-align: middle;
+}
+.small-spacer{
+	width:100%;
+	margin: 15px 0;
+}
+.centered-text{
+	text-align: center;
+	margin: 0 auto;
+}
+.services-header-img{
+	width:100%;
+	height: auto;
+}
+.title{
+	font-size: 200%;
+}
+
+.box-section{
+	width: 100%;
+	display:flex;
+	flex-wrap:wrap;
+	align-items:flex-start;
+	justify-content: space-between;
+}
+.info-box{
+	width: 47.5%;
+	background-color: whitesmoke;
+	border: 1px solid black;
+	padding:2.5%;
+	margin-bottom: 5%;
+}
+.learn-more{
+	background-color: white;
+	text-decoration: none;
+	padding:2% 8%;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+ul{
+	list-style-type: square;
+	list-style-position: inside;
+
+}
+ul li{
+	margin-top: 10px;
+}
+.text-container{
+	display:flex;
+	flex-direction: column;
+	width:44%
+}
+#bottom-section{
+	width:100%;
+	display: flex;
+
+	align-items: flex-start;
+	justify-content: space-between
+}
+b{
+	font-weight: bold;
+}
